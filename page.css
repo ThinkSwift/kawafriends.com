@@ -1,0 +1,16 @@
+/* The text pages (privacy, help): the home page's paper and ink, in a readable column. */
+:root { --bg: #FBF4E7; --ink: #2B2A27; --soft: #6E6A61; --sea: #3E8E8A; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--ink); padding: 0 16px; -webkit-font-smoothing: antialiased;
+  font-family: ui-rounded, "SF Pro Rounded", "Hiragino Maru Gothic ProN", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px 0 0; }
+.brand { font-weight: 800; font-size: 20px; color: var(--ink); text-decoration: none; }
+h1 { font-size: clamp(30px, 7vw, 42px); line-height: 1.1; margin: 28px 0 8px; font-weight: 800; }
+h2 { font-size: 20px; margin: 32px 0 8px; font-weight: 800; }
+p { font-size: 17px; line-height: 1.6; margin: 0 0 12px; }
+.eff { color: var(--soft); font-size: 14px; margin: 0 0 24px; }
+a { color: var(--sea); }
+footer { padding: 40px 0 calc(24px + env(safe-area-inset-bottom)); font-size: 13px; color: var(--soft); display: flex; gap: 16px; flex-wrap: wrap; }
